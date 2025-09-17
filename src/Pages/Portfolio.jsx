@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import HeroSection from '../components/portfolio/HeroSection';
-import AboutSection from '../components/portfolio/AboutSection';
-import SkillsSection from '../components/portfolio/SkillsSection';
-import EducationSection from '../components/portfolio/EducationSection';
-import ProjectsSection from '../components/portfolio/ProjectsSection';
-import AchievementsSection from '../components/portfolio/AchievementsSection';
-import ExtracurricularSection from '../components/portfolio/ExtracurricularSection';
-import InterestsSection from '../components/portfolio/InterestsSection';
-import ContactSection from '../components/portfolio/ContactSection';
-import ScrollProgress from '../components/portfolio/ScrollProgress';
-import BackToTop from '../components/portfolio/BackToTop';
+import HeroSection from '../Components/portfolio/HeroSection.jsx';
+import AboutSection from '../Components/portfolio/AboutSection.jsx';
+import SkillsSection from '../Components/portfolio/SkillsSection.jsx';
+import EducationSection from '../Components/portfolio/EducationSection.jsx';
+import ProjectsSection from '../Components/portfolio/ProjectsSection.jsx';
+import AchievementsSection from '../Components/portfolio/AchievementsSection.jsx';
+import ExtracurricularSection from '../Components/portfolio/ExtracurricularSection.jsx';
+import InterestsSection from '../Components/portfolio/InterestsSection.jsx';
+import ContactSection from '../Components/portfolio/ContactSection.jsx';
+import ScrollProgress from '../Components/portfolio/ScrollProgress.jsx';
+import BackToTop from '../Components/portfolio/BackToTop.jsx';
 
 export default function Portfolio() {
   const [scrollY, setScrollY] = useState(0);

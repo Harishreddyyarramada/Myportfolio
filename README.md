@@ -15,9 +15,9 @@ This portfolio highlights my technical skills, professional certificates, academ
 The portfolio is built using modern web technologies:
 
 - **Frontend:** React, Vite, Tailwind CSS, Framer Motion
-- **Backend (optional):** Node.js / Express (for contact form)
-- **Database (optional):** MySQL or MongoDB
-- **Hosting / Deployment:** GitHub Pages / Vercel / Netlify
+- **Backend :** Node.js / Express 
+- **Database :** MySQL 
+- **Hosting / Deployment:** Vercel 
 - **Icons & Animations:** Lucide React, CSS Animations
 
 ---
@@ -59,15 +59,15 @@ Portfolio/
 git clone https://github.com/Harishreddyyarramada/Myportfolio.git
 
 2.Navigate to the project folder:
-```bash
+
 cd Myportfolio
 
 3.Install dependencies:
-```bash
+
 npm install
 
 4.Run the development server:
-```bash
+
 npm run dev
 
 5.Open your browser at http://localhost:5173

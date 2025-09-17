@@ -9,10 +9,10 @@ import {
   SendHorizontal,
   MessageCircle,
 } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { SendEmail } from "@/integrations/Core";
+import { Button } from "../ui/button.jsx";
+import { Input } from "../ui/input.jsx";
+import { Textarea } from "../ui/textarea.jsx";
+import { SendEmail } from "../../integrations/Core.js";
 
 export default function ContactSection() {
   const [formData, setFormData] = useState({

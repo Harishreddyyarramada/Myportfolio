@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ExternalLink, Github, Code, Database, Shield, Zap } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { Button } from '../ui/button.jsx';
 import {
   Dialog,
   DialogContent,

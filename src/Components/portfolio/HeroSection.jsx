@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Github, Linkedin, Mail, ChevronDown, Download } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Button } from "../ui/button.jsx";
 
 const roles = [
   "Software Developer",

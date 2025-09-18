@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Github, Linkedin, Mail, ChevronDown, Download } from "lucide-react";
 import { Button } from "../ui/button.jsx";
-
+import Data from '../../Resume/Data.js'
 const roles = [
   "Software Developer",
   "Full-Stack Engineer",
@@ -115,7 +115,7 @@ export default function HeroSection({ scrollY }) {
             className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center mb-8 sm:mb-12 px-4"
           >
             {/* Resume Download */}
-            <a href="src/Resume/Yarramada Harish Reddy Resume.pdf" download>
+            <a href={Data.Resume} download>
               <Button
                 className="w-full sm:w-auto bg-gradient-to-r from-cyan-500 to-purple-500 
         hover:from-cyan-600 hover:to-purple-600 

@@ -1,4 +1,4 @@
-import profile from './Harish_Profile.png'
+import profile from './Harish_Profile.jpg'
 
 const assets = {
   profile,

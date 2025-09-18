@@ -222,14 +222,16 @@ export default function ProjectsSection() {
                       <p className="text-gray-300 mb-4">{selectedProject.longDescription}</p>
                       
                       <div className="flex gap-4">
-                        <Button className="bg-gradient-to-r from-cyan-500 to-purple-500">
+                        <a href={selectedProject.github}>
+                        <Button className="bg-gradient-to-r from-cyan-500 to-purple-500" >
                           <Github className="w-4 h-4 mr-2" />
                           View Code
-                        </Button>
+                        </Button></a>
+                        <a href={selectedProject.demo}>
                         <Button variant="outline">
                           <ExternalLink className="w-4 h-4 mr-2" />
                           Live Demo
-                        </Button>
+                        </Button></a>
                       </div>
                     </div>
                     

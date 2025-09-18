@@ -25,7 +25,7 @@ const projects = [
       'Responsive Design',
       'Scalable Backend Architecture'
     ],
-    github: '#',
+    github: 'https://github.com/Harishreddyyarramada/BlogBase-A-Full-Stack-Blog-Sharing-Platform',
     demo: '#'
   },
   {
@@ -43,7 +43,7 @@ const projects = [
       'Machine Learning Models',
       'Team Leadership Role'
     ],
-    github: '#',
+    github: 'https://github.com/Harishreddyyarramada/Secure-Crypto-Biometric-System',
     demo: '#'
   },
   {
@@ -61,8 +61,8 @@ const projects = [
       'Performance Optimization',
       'Cross-browser Compatibility'
     ],
-    github: '#',
-    demo: '#'
+    github: 'https://github.com/Harishreddyyarramada/Nike-Landing-page',
+    demo: 'https://harishreddyyarramada.github.io/Nike-Landing-page/'
   }
 ];
 

@@ -31,33 +31,46 @@ export default function ContactSection() {
     }));
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
+const handleSubmit = async (e) => {
+  e.preventDefault();
+  setIsSubmitting(true);
+  setSubmitStatus(null);
 
-    try {
-      await SendEmail({
-        to: "yarramadaharishreddy@gmail.com",
-        subject: `Portfolio Contact: ${formData.subject}`,
-        body: `
-Name: ${formData.name}
-Email: ${formData.email}
-Subject: ${formData.subject}
+  try {
+    // Replace with your backend URL
+    const backendURL = "https://portfolio-backend-v527.onrender.com/api/contact";
 
-Message:
-${formData.message}
-        `,
-      });
+    const response = await fetch(backendURL, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        Username: formData.name,
+        gmail: formData.email,
+        subject: formData.subject,
+        message: formData.message,
+      }),
+    });
 
+    const resJson = await response.json();
+
+    if (response.ok && resJson.msg) {
       setSubmitStatus("success");
       setFormData({ name: "", email: "", subject: "", message: "" });
-    } catch (error) {
+    } else {
+      console.error("Server error:", resJson);
       setSubmitStatus("error");
     }
-
+  } catch (error) {
+    console.error("Network / unexpected error:", error);
+    setSubmitStatus("error");
+  } finally {
     setIsSubmitting(false);
     setTimeout(() => setSubmitStatus(null), 5000);
-  };
+  }
+};
+
 
   const contactInfo = [
     {
@@ -212,7 +225,6 @@ ${formData.message}
                     ) : (
                       <>
                         <SendHorizontal className="w-5 h-5" />{" "}
-                        {/* 👈 removed mr-2 */}
                         Send Message
                       </>
                     )}

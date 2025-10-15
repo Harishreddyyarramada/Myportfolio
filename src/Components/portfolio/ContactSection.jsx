@@ -106,7 +106,7 @@ const handleSubmit = async (e) => {
     {
       icon: Linkedin,
       label: "LinkedIn",
-      href: "https://www.linkedin.com/in/harish-reddy-yarramada-44aaa8287/",
+      href: "https://www.linkedin.com/in/yarramada-harish-reddy-44aaa8287/",
       color: "from-blue-600 to-blue-800",
     },
     {

@@ -167,7 +167,7 @@ export default function HeroSection({ scrollY }) {
               },
               {
                 icon: Linkedin,
-                href: "https://www.linkedin.com/in/yarramada-harish-reddy-44aaa8287/",
+                href: "https://www.linkedin.com/in/yarramada-harish-reddy-44aaa8287/k",
                 label: "LinkedIn",
               },
               {

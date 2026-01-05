@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Github, Linkedin, Mail, ChevronDown, Download } from "lucide-react";
 import { Button } from "../ui/button.jsx";
-import Data from '../../Resume/Data.js'
 const roles = [
   "Software Developer",
   "Full-Stack Engineer",
@@ -115,7 +114,7 @@ export default function HeroSection({ scrollY }) {
             className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center mb-8 sm:mb-12 px-4"
           >
             {/* Resume Download */}
-            <a href={Data.Resume} download>
+            <a href={'https://drive.google.com/file/d/10vyFnUXnU7B6Gg7Q_AbRYEl6qK23V2gR/view?usp=sharing'} target="_blank">
               <Button
                 className="w-full sm:w-auto bg-gradient-to-r from-cyan-500 to-purple-500 
         hover:from-cyan-600 hover:to-purple-600 
@@ -130,7 +129,7 @@ export default function HeroSection({ scrollY }) {
               >
                 <Download className="w-4 sm:w-5 md:w-6 h-4 sm:h-5 md:h-6 mr-2" />
                 <span className="text-sm sm:text-base md:text-lg">
-                  Download Resume
+                  Resume
                 </span>
               </Button>
             </a>

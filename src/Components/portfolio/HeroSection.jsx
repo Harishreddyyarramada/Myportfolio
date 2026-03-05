@@ -114,7 +114,12 @@ export default function HeroSection({ scrollY }) {
             className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center mb-8 sm:mb-12 px-4"
           >
             {/* Resume Download */}
-            <a href={'https://drive.google.com/file/d/10vyFnUXnU7B6Gg7Q_AbRYEl6qK23V2gR/view?usp=sharing'} target="_blank">
+            <a
+              href={
+                "https://drive.google.com/file/d/1jvxOh8XDwUY5Lpa6JnyN-yr8lRXiAa9B/view?usp=sharing"
+              }
+              target="_blank"
+            >
               <Button
                 className="w-full sm:w-auto bg-gradient-to-r from-cyan-500 to-purple-500 
         hover:from-cyan-600 hover:to-purple-600 
@@ -128,9 +133,7 @@ export default function HeroSection({ scrollY }) {
         flex items-center justify-center"
               >
                 <Download className="w-4 sm:w-5 md:w-6 h-4 sm:h-5 md:h-6 mr-2" />
-                <span className="text-sm sm:text-base md:text-lg">
-                  Resume
-                </span>
+                <span className="text-sm sm:text-base md:text-lg">Resume</span>
               </Button>
             </a>
 
